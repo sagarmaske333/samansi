@@ -1,0 +1,8 @@
+- name: first yaml file
+  become: yes
+  hosts: all
+  tasks:
+    - name: debug message
+      debug:
+          msg: Hello world! # not required. The customized message that is printed. If omitted, prints a generic message.
+          
